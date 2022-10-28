@@ -1,0 +1,263 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+    --green: mediumseagreen;
+    --light-green: rgb(127, 255, 212);
+    --black: #130f40;
+    --white: #fff;
+    --light-color: #666;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: 0.4rem solid var(--light-green);
+  }
+
+  * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+  }
+  
+  body {
+    background: #eee;
+  }
+
+  .heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+  }
+  
+  .heading span {
+    background: var(--green);
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  }
+  
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+  }
+  
+  .btn:hover {
+    background: var(--green);
+    color: #fff;
+  }
+  
+  /* NAV */
+  header {
+    background: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem 9%;
+    box-shadow: var(--box-shadow);
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--black);
+  }
+  
+  header .logo i {
+    color: var(--green);
+  }
+
+  header nav a{
+    font-size: 1rem;
+    color: var(--black);
+    margin: 0 1rem;
+  }
+
+  header .icon-nav div {
+    height: 2rem;
+    width: 2rem;
+    line-height: .15rem;
+    border-radius: 0.3rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-left: 0.1rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  header .icon-nav div:hover {
+    background: var(--green);
+    color: #fff;
+  }
+  
+  #menu-btn {
+    display: none;
+  }
+
+  /* MAIN */
+  main{
+    /* background: var(--white); */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* MAIN HEADER */
+  main .header img{
+    height: 25rem;
+    padding-top: 5rem;
+    padding-left: 8rem;
+    margin-right: 10rem;
+  }
+
+  main .header h3{
+    color: var(--green);
+    font-size: 2.5rem;
+    padding-top: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 0;
+  }
+  
+  main .header p{
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-top: 3px;
+    padding-top: 0;
+    padding-right: 10rem;
+  }
+
+  /* FITUR */
+  main .content .fitur .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    padding: 0 10rem;
+  }
+
+  main .content .fitur .box-container .box{
+    padding: 1rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
+
+  main .content .fitur .box-container .box:hover{
+    outline: var(--outline-hover);
+    /* box-shadow: 2px 2px 4px #7fffd4; */
+    outline-offset: 0rem;
+  }
+
+  main .content .fitur .box-container .box img{
+    margin: 1rem 0;
+    height: 10rem; 
+  }
+
+  main .content .fitur .box-container .box h3 {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: 0;
+  }
+  
+  main .content .fitur .box-container .box p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 0 0;
+  }
+
+  /* TENTANG */
+  main .content .tentang img{
+    height: 20rem;
+  }
+
+  main .content .tentang h3{
+    font-size: 2rem;
+    color: var(--green);
+    margin-bottom: 0;
+  }
+
+  main .content .tentang p{
+    margin-top: 1rem;
+  }
+
+  main .content .tentang{
+    margin: 1rem 10rem;
+  }
+
+  main .content .tentang .des{
+    padding-left: 2rem;
+  }
+
+  /* ASIDE */
+  main aside .profile{
+    overflow: auto;
+  }
+  main aside .profile figure{
+    width: 50%;
+    float: left;
+  }
+  main aside .profile table{
+    width: 50%;
+  }
+  main aside .profile figure img{
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
